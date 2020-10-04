@@ -1,0 +1,168 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(85, 26, 139);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(85, 26, 139);
+}
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1f1731;
+    color: rgb(242, 239, 255);
+} 
+
+.container{
+    display: flex;
+}
+
+.left-menu{
+    z-index: 2;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 22.64%;
+    height: 100vh;
+    background-color: rgb(42, 32, 65);
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.top-left-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top-left-menu h2, h3, h4{
+    margin-bottom: 0.1rem;
+}
+
+.profile-photo{
+    width: 80%;
+    border-radius: 50%;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+header {
+    animation-duration: 0.25s;
+    animation-name: fadein;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 22.64%;
+    width: 77.36%;
+    height: 8vh;    
+    background-color:rgb(171, 160, 218);
+    color: #1f1731;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+main{
+    animation-duration: 0.75s;
+    animation-name: fadein;
+    z-index: 0;
+    position: relative;
+    box-sizing: border-box;
+    left: 22.64%;
+    top: 8vh;
+    width: 75%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.main_2{
+    top: 0vh;
+}
+
+main li{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+img{
+    border-radius: 15px;
+}
+
+main h1{
+    text-align: center;
+    color: rgb(42, 32, 65);
+    font-size: 3rem;
+    font-family: 'Cantata One', serif;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    word-spacing: 0.3em;
+    margin-bottom: 3rem;
+}
+
+main p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1rem;
+}
+  
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.box-1 { 
+    background-color: rgb(242, 239, 255);
+    color: rgb(42, 32, 65);
+
+    border-radius: 15px;
+
+    margin: 20px;
+    padding: 20px;
+}
+
+
+back{
+    animation-duration: 0.75s;
+    animation-name: fadein;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 14%;
+    width: 10%;
+    height: 8vh;    
+    color: #1f1731;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+back a, back a:hover{
+    color: rgb(242, 239, 255);
+}
